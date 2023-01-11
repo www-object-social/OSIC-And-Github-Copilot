@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{0B8226
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Server\Database\Database.csproj", "{9AC87E83-3DC9-4A68-AACD-B286B1A74743}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hosting", "Hosting\Hosting.csproj", "{0D31FB57-4131-4FE0-8B8C-087BBD9F05EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{9AC87E83-3DC9-4A68-AACD-B286B1A74743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AC87E83-3DC9-4A68-AACD-B286B1A74743}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AC87E83-3DC9-4A68-AACD-B286B1A74743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D31FB57-4131-4FE0-8B8C-087BBD9F05EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D31FB57-4131-4FE0-8B8C-087BBD9F05EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D31FB57-4131-4FE0-8B8C-087BBD9F05EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D31FB57-4131-4FE0-8B8C-087BBD9F05EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9AC87E83-3DC9-4A68-AACD-B286B1A74743} = {0B82268C-532E-416F-9F3F-BD420DA62B42}
+		{0D31FB57-4131-4FE0-8B8C-087BBD9F05EF} = {0B82268C-532E-416F-9F3F-BD420DA62B42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5918426E-7ED8-46C6-A512-1D13AEF0D5CF}
