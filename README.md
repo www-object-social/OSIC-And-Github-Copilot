@@ -1,26 +1,20 @@
-OSIC And Github Copilot
+OSIC-And-Github-Copilot
 
-This project is created by OBJECT:SOCIAL using OpenAI.com.
+This repository contains the source code for the OSIC-And-Github-Copilot project. The project is divided into three main parts: Server, Browser, and Software.
+Server
 
-The project contains the following file and folder structure:
+The Server folder contains the code for the backend of the project. It is built using ASP.NET Core and connects to a database using Entity Framework Core. The Database.csproj file contains the dependencies for connecting to the database and the Server.csproj file contains the dependencies for hosting the backend on a web server.
+Browser
 
-    Server: This folder contains all the server-side code for the application. Inside the Server folder, you will find:
-        InterConnecting: This folder contains the Blazor WebAssembly project for the application.
-        Hosting: This folder contains the hosting project for the application.
-        Database: This folder contains the SQL project for the application.
-        StructuredQueryLanguage: This folder contains the SQL files for the application.
+The Browser folder contains the code for the frontend of the project. It is built using Blazor WebAssembly and communicates with the backend using HTTP requests. The InterConnecting.csproj file contains the dependencies for building the frontend. The App.razor file is the main entry point for the frontend and uses routing to navigate between pages.
+Software
 
-    Browser: This folder contains the browser-side code for the application. Inside the Browser folder, you will find:
-        InterConnecting: This folder contains the Blazor WebAssembly project for the application.
+The Software folder contains the code for building the project as a standalone desktop application using Maui and .NET MAUI The InterConnecting.csproj file contains the dependencies for building the application and the MauiProgram.cs file is the entry point for the application.
+Shared
 
-    Software: This folder contains the software-side code for the application. Inside the Software folder, you will find:
-        InterConnecting: This folder contains the software-side code for the application.
+The Shared folder contains code that is shared across multiple projects. The Layout folder contains the code for the shared layout that is used by the browser and software projects. The Injection.cs file contains a shared injection method that is used by browser and software to register their dependencies.
+Other files
 
-    Shared: This folder contains the shared code between the server and browser side of the application. Inside the Shared folder, you will find:
-        Project: This folder contains the shared code for the application.
-
-    OSIC-And-Github-Copilot.sln: This is the solution file for the entire application, which includes all the projects.
-
-    readme.md: This file contains the documentation for the project.
+The OSIC-And-Github-Copilot.sln file is the solution file for the project and contains references to all of the project files
 
 This readme file is made by OpenAI.com.
