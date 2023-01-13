@@ -1,26 +1,24 @@
-OSIC And Github Copilot
+# OSIC-And-Github-Copilot
 
-This project is created by OBJECT:SOCIAL using OpenAI.com.
+This is a project for OSIC SaaS application called InterConnecting. The project is divided into three main parts:
 
-The project contains the following file and folder structure:
+1. **Shared**: This folder contains the shared code that is used by both the browser and the server parts of the application. This includes the layout, fonts and styles used throughout the application.
 
-    Server: This folder contains all the server-side code for the application. Inside the Server folder, you will find:
-        InterConnecting: This folder contains the Blazor WebAssembly project for the application.
-        Hosting: This folder contains the hosting project for the application.
-        Database: This folder contains the SQL project for the application.
-        StructuredQueryLanguage: This folder contains the SQL files for the application.
+2. **Server**: This folder contains the server-side code for the InterConnecting application. This includes the pages, models, and services that handle the server-side logic.
 
-    Browser: This folder contains the browser-side code for the application. Inside the Browser folder, you will find:
-        InterConnecting: This folder contains the Blazor WebAssembly project for the application.
+3. **Browser**: This folder contains the browser-side code for the InterConnecting application. This includes the Razor components, JavaScript, and HTML files that make up the user interface.
 
-    Software: This folder contains the software-side code for the application. Inside the Software folder, you will find:
-        InterConnecting: This folder contains the software-side code for the application.
+## How to run the project
 
-    Shared: This folder contains the shared code between the server and browser side of the application. Inside the Shared folder, you will find:
-        Project: This folder contains the shared code for the application.
+To run this project, you will need the following tools installed:
 
-    OSIC-And-Github-Copilot.sln: This is the solution file for the entire application, which includes all the projects.
+1. .NET Core SDK 7.0
+2. Visual Studio or Visual Studio Code
 
-    readme.md: This file contains the documentation for the project.
+Once you have these tools installed, you can open the OSIC-And-Github-Copilot.sln file in Visual Studio or Visual Studio Code and run the application.
 
-This readme file is made by OpenAI.com.
+## Contributing
+
+If you would like to contribute to the development of OSIC SaaS InterConnecting, please send an email to ceo@interconnecting.info for more information.
+
+Note: OSIC SaaS is owned by OBJECT:SOCIAL and is under copyright.

@@ -1,0 +1,132 @@
+﻿@font-face {
+    font-family: 'nunito_sansblack';
+    src: url('nunitosans-black.woff2') format('woff2'), url('nunitosans-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansblack_italic';
+    src: url('nunitosans-blackitalic.woff2') format('woff2'), url('nunitosans-blackitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansbold';
+    src: url('nunitosans-bold.woff2') format('woff2'), url('nunitosans-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansbold_italic';
+    src: url('nunitosans-bolditalic.woff2') format('woff2'), url('nunitosans-bolditalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansextrabold';
+    src: url('nunitosans-extrabold.woff2') format('woff2'), url('nunitosans-extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansextrabold_italic';
+    src: url('nunitosans-extrabolditalic.woff2') format('woff2'), url('nunitosans-extrabolditalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansextralight';
+    src: url('nunitosans-extralight.woff2') format('woff2'), url('nunitosans-extralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sanssemibold';
+    src: url('nunitosans-semibold.woff2') format('woff2'), url('nunitosans-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sanssemibold_italic';
+    src: url('nunitosans-semibolditalic.woff2') format('woff2'), url('nunitosans-semibolditalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansextralight_italic';
+    src: url('nunitosans-extralightitalic.woff2') format('woff2'), url('nunitosans-extralightitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansitalic';
+    src: url('nunitosans-italic.woff2') format('woff2'), url('nunitosans-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sanslight';
+    src: url('nunitosans-light.woff2') format('woff2'), url('nunitosans-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sanslight_italic';
+    src: url('nunitosans-lightitalic.woff2') format('woff2'), url('nunitosans-lightitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansregular';
+    src: url('nunitosans-regular.woff2') format('woff2'), url('nunitosans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:focus {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: default;
+    user-select: none;
+    z-index: 0;
+    font-family: nunito_sansregular;
+}
+body {
+    background-color: #000;
+}
+main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+main[website] {
+        min-width: 430px;
+        min-height: 600px;
+    }
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #808080;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+    background: #808080;
+    border-radius: 3px;
+}
+    ::-webkit-scrollbar-thumb:hover {
+        background: #808080;
+    }

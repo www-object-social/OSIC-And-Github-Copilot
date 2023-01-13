@@ -1,4 +1,6 @@
-﻿namespace OSIC.Server.Hosting;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+namespace OSIC.Server.Hosting;
 public static class Injection
 {
     public static IServiceCollection OSICServerHostingInjection(this IServiceCollection Services, Shared.Project.Software Software) {
