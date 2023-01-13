@@ -13,10 +13,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="code\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Server\Database\Database.csproj" />
+    <ProjectReference Include="..\..\Shared\Project\Project.csproj" />
+    <ProjectReference Include="..\Database\Database.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Using Include="Microsoft.AspNetCore.SignalR" />

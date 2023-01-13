@@ -1,6 +1,4 @@
-﻿using System.Formats.Tar;
-
-namespace OSIC.Server.Hosting.database;
+﻿namespace OSIC.Server.Hosting.database;
 static class Setting
 {
     public static string Path => System.Environment.GetFolderPath(System.Environment.SpecialFolder.CommonApplicationData);

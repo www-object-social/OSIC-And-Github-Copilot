@@ -4,20 +4,24 @@ using OSIC.Server.Hosting;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-builder.Services.AddSession();
+builder.Services.AddSession(x => {
+    x.Cookie.Name = "OSIC";
+});
 builder.Services.AddSignalR();
-builder.Services.OSICServerHostingInjection();
+builder.Services.OSICServerHostingInjection(OSIC.Shared.Project.Software.InterConnecting);
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
     app.UseWebAssemblyDebugging();
 else
     app.UseHsts();
 app.UseHttpsRedirection();
+app.UseSession();
 app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 app.UseRouting();
 app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToPage("/index");
+app.MapGet("/index.html", context =>{ context.Response.Redirect("/Index"); return Task.CompletedTask;});
 app.MapHub<OSIC.Server.Hosting.gateway.Binding>("/OSIC.Server.Hosting.gateway.Binding");
 app.Run();
