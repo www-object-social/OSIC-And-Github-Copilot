@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
@@ -14,9 +13,8 @@
 			<AssemblyName>OSIC.Software.$(MSBuildProjectName)</AssemblyName>
 		<RootNamespace>OSIC.Software.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
 	</PropertyGroup>
-
 	<ItemGroup>
+	  <ProjectReference Include="..\..\Shared\Layout\Layout.csproj" />
 	  <ProjectReference Include="..\..\Shared\Project\Project.csproj" />
 	</ItemGroup>
-
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace OSIC.Shared.Network;
+﻿namespace OSIC.Shared.Layout.network;
 public interface Handler
 {
     public Status Status { get; }

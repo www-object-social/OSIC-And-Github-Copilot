@@ -33,7 +33,6 @@
         <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#000000" BaseSize="128,128" />
         <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-      <ProjectReference Include="..\..\Shared\Layout\Layout.csproj" />
       <ProjectReference Include="..\Solution\Solution.csproj" />
     </ItemGroup>
 </Project>
