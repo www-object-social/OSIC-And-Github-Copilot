@@ -1,0 +1,11 @@
+﻿@if (_processData.Status is process.Status.StartUp || NetworkHandler.Status is Status.Online) return;
+<div></div>
+@code {
+    private process.Data _processData => ProcessHandler.Get("OSIC.Shared.Layout.network.Handler");
+    protected override Task OnInitializedAsync()
+    {
+        ProcessHandler.Change += async () => await this.InvokeAsync(this.StateHasChanged);
+        NetworkHandler.Change += async () => await this.InvokeAsync(this.StateHasChanged);
+        return base.OnInitializedAsync();
+    }
+}

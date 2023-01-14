@@ -1,0 +1,12 @@
+﻿div {
+    position: absolute;
+    background-image: url("network/no-internet.png");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    opacity: .5;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}

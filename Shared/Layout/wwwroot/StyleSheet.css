@@ -4,28 +4,24 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'nunito_sansblack_italic';
     src: url('nunitosans-blackitalic.woff2') format('woff2'), url('nunitosans-blackitalic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'nunito_sansbold';
     src: url('nunitosans-bold.woff2') format('woff2'), url('nunitosans-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'nunito_sansbold_italic';
     src: url('nunitosans-bolditalic.woff2') format('woff2'), url('nunitosans-bolditalic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'nunito_sansextrabold';
     src: url('nunitosans-extrabold.woff2') format('woff2'), url('nunitosans-extrabold.woff') format('woff');

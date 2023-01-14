@@ -3,14 +3,15 @@ public class Data
 {
     public string Type { get; private set; }
     private Status _Status;
-    public event Action Change = null!;
+    internal event Action Change = null!;
     public Status Status
     {
         get => _Status;
         internal set
         {
+            if (_Status == value) return;
             _Status = value;
-            this.Change.Invoke();
+            this.Change?.Invoke();
         }
     }
     internal Data(string Type, Status Status)

@@ -19,7 +19,7 @@ public class Handler
             this.Change?.Invoke();
         }
     }
-    private List<Data> Datas = new List<Data>();
+    public List<Data> Datas = new List<Data>();
     public Task Set(string Type, Status Status)
     {
         if (this.Datas.Any(x => x.Type == Type))

@@ -1,0 +1,9 @@
+﻿@if (ProcessHandler.Status is Status.Done) return;
+<div></div>
+@code {
+    protected override Task OnInitializedAsync()
+    {
+        ProcessHandler.Change += async () => await this.InvokeAsync(this.StateHasChanged);
+        return base.OnInitializedAsync();
+    }
+}
