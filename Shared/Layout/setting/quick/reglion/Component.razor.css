@@ -1,0 +1,9 @@
+﻿div {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 8px;
+    cursor: pointer;
+    font-family:nunito_sansbold;
+}

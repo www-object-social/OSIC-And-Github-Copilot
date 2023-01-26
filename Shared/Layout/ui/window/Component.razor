@@ -1,0 +1,8 @@
+﻿<div class="ui-window">
+    @Content
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public RenderFragment Content { get; set; } = null!;
+}

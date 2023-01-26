@@ -1,0 +1,37 @@
+﻿@keyframes m-0 {
+    0% {
+        width: 150px;
+        right: calc(50% - 75px);
+        top: 120px;
+    }
+    100% {
+        top: 10px;
+        right: 10px;
+        width: 30px;
+    }
+}
+.logo {
+    position: absolute;
+    width: 150px;
+    right: calc(50% - 75px);
+    top: 120px;
+}
+.os, .ic {
+    position: absolute;
+    width: 50px;
+    right: 10px;
+    bottom: 10px;
+}
+.claims {
+    position: absolute;
+    width: 50px;
+    left: 10px;
+    bottom: 10px;
+}
+.big {
+    animation: forwards 1.5s m-1;
+}
+.small {
+    animation: forwards 1.5s m-0;
+    cursor: pointer;
+}

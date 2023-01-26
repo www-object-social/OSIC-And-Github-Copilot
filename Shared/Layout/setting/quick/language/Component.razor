@@ -1,0 +1,8 @@
+﻿<div>@BindingConfigation.Language</div>
+@code {
+    protected override Task OnInitializedAsync()
+    {
+        BindingConfigation.LanguageChange +=()=> this.InvokeAsync(this.StateHasChanged);
+        return base.OnInitializedAsync();
+    }
+}

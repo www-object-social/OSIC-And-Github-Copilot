@@ -9,7 +9,6 @@ public class Data
         get => _Status;
         internal set
         {
-            if (_Status == value) return;
             _Status = value;
             this.Change?.Invoke();
         }

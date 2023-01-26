@@ -1,4 +1,17 @@
 ﻿@inherits LayoutComponentBase
 <OSIC.Shared.Layout.network.Component/>
 <OSIC.Shared.Layout.process.Component />
+<OSIC.Shared.Layout.logo.Component />
+@if (ProcessHandler.Status is process.Status.Install or process.Status.StartUp) return;
+<OSIC.Shared.Layout.agreements.button.Component />
+<OSIC.Shared.Layout.setting.quick.language.Component />
+<OSIC.Shared.Layout.setting.quick.reglion.Component />
+<OSIC.Shared.Layout.infomation.Component />
 @Body
+@code{
+    protected override Task OnInitializedAsync()
+    {
+        ProcessHandler.Change += async () => await this.InvokeAsync(this.StateHasChanged);
+        return base.OnInitializedAsync();
+    }
+}

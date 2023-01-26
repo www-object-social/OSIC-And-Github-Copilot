@@ -1,0 +1,28 @@
+﻿@if (ProcessHandler.Status is process.Status.StartUp)
+    switch (SharedProjectConfigation.Software)
+    {
+        case OSIC.Shared.Project.Software.OBJECTSOCIAL:
+            <img src="_content/OSIC.Shared.Layout/logo/OS.png" class="logo" />
+            <img src="_content/OSIC.Shared.Layout/logo/IC.png" class="ic" />
+            break;
+        case OSIC.Shared.Project.Software.InterConnecting:
+             <img src="_content/OSIC.Shared.Layout/logo/IC.png" class="logo" />
+            <img src="_content/OSIC.Shared.Layout/logo/OS.png"  class="os"/>
+            <img src="_content/OSIC.Shared.Layout/logo/Claims.png" class="claims" />
+            break;
+        default:
+            <img src="_content/OSIC.Shared.Layout/logo/Claims.png" cl ass="logo"/>
+            <img src="_content/OSIC.Shared.Layout/logo/IC.png" class="ic" />
+            break;
+    }
+else
+{
+    <img src="_content/OSIC.Shared.Layout/logo/@(SharedProjectConfigation.Software switch{ OSIC.Shared.Project.Software.OBJECTSOCIAL=>"OS", OSIC.Shared.Project.Software.InterConnecting=>"IC",_=>"Claims"}).png" class="logo @(ProcessHandler.Status is process.Status.Install?"big":"small")" @onclick="InfomationHandler.Open" />
+}
+@code {
+    protected override void OnInitialized()
+    {
+        ProcessHandler.Change += async () => await this.InvokeAsync(this.StateHasChanged);
+        base.OnInitialized();
+    }
+} 

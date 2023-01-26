@@ -1,0 +1,20 @@
+﻿::deep .ui-window {
+    height: 90%;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    max-height: 297mm;
+    max-width: 210mm;
+}
+@media only screen and (min-width:calc(210mm + 10px)) {
+    ::deep .ui-window {
+        min-width: 210mm;
+        left: calc(50% - 105mm);
+    }
+}
+@media only screen and (min-height:calc(297mm + 10px)) {
+    ::deep .ui-window {
+        min-height: 297mm;
+        top: calc(50% - 148.5mm);
+    }
+}

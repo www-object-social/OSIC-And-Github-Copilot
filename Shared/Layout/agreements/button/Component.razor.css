@@ -1,0 +1,15 @@
+﻿object {
+    color: #fff;
+    font-size: 7px;
+    font-family: nunito_sansregular;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    right: 1px;
+    top: 40%;
+    cursor: pointer;
+}
+div {
+    cursor: pointer;
+    float: left;
+}

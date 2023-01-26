@@ -7,4 +7,60 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="ecc61d8b-d7c3-4555-99f4-66da267ff601" ChangeDateTime="01/15/2023 23:09:20">
+    <Property Name="ElementName" Value="[dbo].[Unit].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Unit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a7ee5b84-26a1-46c5-bf75-18d3b669e219" ChangeDateTime="01/15/2023 23:13:32">
+    <Property Name="ElementName" Value="[dbo].[Binding].[Unit.ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Binding]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProjectSoftware" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f47239f3-d769-4d16-80b6-ca0ff0b5e6dd" ChangeDateTime="01/15/2023 23:19:10">
+    <Property Name="ElementName" Value="[dbo].[BindingConnection].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[BindingConnection]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3091f827-f955-4c80-b0df-f36a346867a3" ChangeDateTime="01/16/2023 12:25:40">
+    <Property Name="ElementName" Value="[dbo].[Server].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Server]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e44776bf-9613-4421-a5a5-43a0bc06081c" ChangeDateTime="01/16/2023 21:45:45">
+    <Property Name="ElementName" Value="[dbo].[BindingAuthentication].[col1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[BindingAuthentication]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="644d0890-2d06-476f-8208-cc396972c8a0" ChangeDateTime="01/16/2023 21:46:44">
+    <Property Name="ElementName" Value="[dbo].[BindingAuthentication].[IsActiv]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[BindingAuthentication]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsActive" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="28390743-4ec9-4592-b0a9-33d9fb003fa6" ChangeDateTime="01/16/2023 21:47:00">
+    <Property Name="ElementName" Value="[dbo].[BindingAuthentication].[IsVerfied]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[BindingAuthentication]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsVerified" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e8af4929-93e9-45f9-af4a-9526e5e157ac" ChangeDateTime="01/16/2023 21:56:43">
+    <Property Name="ElementName" Value="[dbo].[BindingConnection].[IsLocal]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[BindingConnection]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsDeveloper" />
+  </Operation>
 </Operations>

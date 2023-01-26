@@ -1,0 +1,8 @@
+﻿<div>@BindingConfigation.Region</div>
+@code {
+    protected override Task OnInitializedAsync()
+    {
+        BindingConfigation.RegionChange += () => this.InvokeAsync(this.StateHasChanged);
+        return base.OnInitializedAsync();
+    }
+}

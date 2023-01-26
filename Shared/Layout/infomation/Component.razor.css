@@ -1,0 +1,86 @@
+﻿.logo {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 20px;
+    height: 40px;
+    width: 40px;
+    background-image: url("../../_content/OSIC.Shared.Layout/logo/Claims.png"), linear-gradient(to right, #210303, #210a0a, #221010, #231515, #241919, #241b19, #231d1a, #231f1c, #21201d, #1f211e, #1f2120, #202121);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%,100%;
+    border-radius: 10px;
+    border: dashed 1px #fff,0;
+    border-bottom: 0;
+    cursor: pointer;
+}
+.small-os {
+    left: calc(50% - 65px);
+    background-image: url("../../_content/OSIC.Shared.Layout/logo/OS.png"),linear-gradient(to right, #210303, #210a0a, #221010, #231515, #241919, #241b19, #231d1a, #231f1c, #21201d, #1f211e, #1f2120, #202121);
+}
+.small-ic {
+    left: calc(50% + 25px);
+    background-image: url("../../_content/OSIC.Shared.Layout/logo/IC.png"), linear-gradient(to right, #210303, #210a0a, #221010, #231515, #241919, #241b19, #231d1a, #231f1c, #21201d, #1f211e, #1f2120, #202121);
+}
+.small-claims[data-focus="on"] {
+    background-image: url("../../_content/OSIC.Shared.Layout/logo/Claims.png"), linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.small-os[data-focus="on"] {
+    background-image: url("../../_content/OSIC.Shared.Layout/logo/OS.png"), linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.small-ic[data-focus="on"] {
+    background-image: url("../../_content/OSIC.Shared.Layout/logo/IC.png"), linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.spaceman, .spaceman1, .spaceman2 {
+    position: absolute;
+    bottom: 0;
+    height: 182px;
+    width: 295px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+    z-index: -1;
+}
+.spaceman {
+    background-image: url(../../_content/OSIC.Shared.Layout/infomation/Spaceman.svg);
+}
+.spaceman1 {
+    background-image: url(../../_content/OSIC.Shared.Layout/infomation/Spaceman1.svg);
+}
+.spaceman2 {
+    background-image: url(../../_content/OSIC.Shared.Layout/infomation/Spaceman2.svg);
+}
+.title {
+    position:absolute;
+    top:75px;
+    font-size:10.5px;
+    text-align:center;
+    color:#fff;
+    width:100%;
+}
+.future {
+    font-size: 8.5px;
+    color: #fff;
+    text-align:center;
+}
+::deep .ui-scroll {
+    position: absolute;
+    color: #fff;
+    left: 1px;
+    width: calc(100% - 2px);
+    top: 95px;
+    height: calc(100% - 95px);
+}
+.browser, .application {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+    .browser img {
+        width: 20px;
+
+        margin:4px;
+    }
+    .application img {
+        width: 30px;
+        margin: 4px;
+    }

@@ -11,8 +11,9 @@ public static class MauiProgram
         builder.UseMauiApp<App>();
         builder.Services.AddMauiBlazorWebView();
         builder.Services.OSICSharedLayoutInjection().OSICSoftwareSolution(OSIC.Shared.Project.Software.InterConnecting);
+        builder.Services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri("https://interconnecting.info/") });
         #if DEBUG
-		        builder.Services.AddBlazorWebViewDeveloperTools();
+        builder.Services.AddBlazorWebViewDeveloperTools();
 		        builder.Logging.AddDebug();
         #endif
         return builder.Build();

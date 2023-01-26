@@ -112,6 +112,20 @@ main[website] {
         min-width: 430px;
         min-height: 600px;
     }
+.startup {
+    position: absolute;
+    width: 150px;
+    right: calc(50% - 75px);
+    top: 120px;
+}
+
+
+.claims {
+    position: absolute;
+    width: 50px;
+    left: 10px;
+    bottom: 10px;
+}
 ::-webkit-scrollbar {
     width: 3px;
 }

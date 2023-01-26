@@ -1,4 +1,4 @@
-﻿@if (_processData.Status is process.Status.StartUp || NetworkHandler.Status is Status.Online) return;
+﻿@if (NetworkHandler.Status is Status.Online || _processData.Status is not process.Status.Done) return;
 <div></div>
 @code {
     private process.Data _processData => ProcessHandler.Get("OSIC.Shared.Layout.network.Handler");

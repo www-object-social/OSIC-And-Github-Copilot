@@ -1,0 +1,17 @@
+﻿@if (Setting == null || !Setting.IsOpen) return;
+<object style="z-index:@Setting.Index">
+    @Content
+</object>
+@code {
+    private Setting Setting { get; set; } = null!;
+    [EditorRequired,Parameter]
+    public RenderFragment Content { get; set; } = null!;
+    [EditorRequired, Parameter]
+    public string Name { get; set; } = null!;
+    protected override async Task OnInitializedAsync()
+    {
+        Setting = await FrameHandler.Init(Name);
+        Setting.Change += async () => await InvokeAsync(this.StateHasChanged);
+        await base.OnInitializedAsync();
+    }
+}

@@ -58,7 +58,10 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Hosting.sql" />
+    <Build Include="Binding.sql" />
+    <Build Include="BindingSecurity.sql" />
+    <Build Include="BindingConnection.sql" />
+    <Build Include="BindingAuthentication.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="StructuredQueryLanguage.refactorlog" />
