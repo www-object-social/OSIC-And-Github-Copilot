@@ -1,5 +1,5 @@
 ﻿@if (Setting == null || !Setting.IsOpen) return;
-<object style="z-index:@Setting.Index">
+<object style="--z:@Setting.Index">
     @Content
 </object>
 @code {

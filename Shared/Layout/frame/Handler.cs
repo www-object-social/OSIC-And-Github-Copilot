@@ -19,6 +19,7 @@ class Handler
         {
             i++;
             a.Index = i;
+            Console.WriteLine(i.ToString());
             a.Update();
         }
     }
@@ -26,7 +27,7 @@ class Handler
     {
       
         var s = this.Settings.Single(x => x.Name == Name);
-        s.Index = this.Settings.Count() + 1;
+        s.Index = this.Settings.Count+1;
         s.IsOpen = true;
         this.Update();
         return Task.CompletedTask;

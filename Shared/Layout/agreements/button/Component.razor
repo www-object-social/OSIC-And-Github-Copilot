@@ -1,4 +1,4 @@
-﻿<object>
+﻿<object @onclick=Open>
     <div>𝗢𝗕𝗝𝗘𝗖𝗧:𝗦𝗢𝗖𝗜𝗔𝗟&nbsp;©&nbsp;@DateTime.Now.Year&nbsp;&nbsp;</div>
     @switch (BindingConfigation.Language)
     {
@@ -7,3 +7,6 @@
             break;
     }
 </object>
+@code{
+    public void Open() => FrameHandler.Open("OSIC.Shared.Layout.agreements.Component");
+}

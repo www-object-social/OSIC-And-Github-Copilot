@@ -4,7 +4,6 @@
     top: 20px;
     height: 40px;
     width: 40px;
-    background-image: url("../../_content/OSIC.Shared.Layout/logo/Claims.png"), linear-gradient(to right, #210303, #210a0a, #221010, #231515, #241919, #241b19, #231d1a, #231f1c, #21201d, #1f211e, #1f2120, #202121);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%,100%;
@@ -13,41 +12,35 @@
     border-bottom: 0;
     cursor: pointer;
 }
-.small-os {
+[data-focus="off"] {
+    background-image: var(--i),linear-gradient(to right, #210303, #210a0a, #221010, #231515, #241919, #241b19, #231d1a, #231f1c, #21201d, #1f211e, #1f2120, #202121);
+}
+.os {
     left: calc(50% - 65px);
-    background-image: url("../../_content/OSIC.Shared.Layout/logo/OS.png"),linear-gradient(to right, #210303, #210a0a, #221010, #231515, #241919, #241b19, #231d1a, #231f1c, #21201d, #1f211e, #1f2120, #202121);
 }
-.small-ic {
+.ic {
     left: calc(50% + 25px);
-    background-image: url("../../_content/OSIC.Shared.Layout/logo/IC.png"), linear-gradient(to right, #210303, #210a0a, #221010, #231515, #241919, #241b19, #231d1a, #231f1c, #21201d, #1f211e, #1f2120, #202121);
 }
-.small-claims[data-focus="on"] {
-    background-image: url("../../_content/OSIC.Shared.Layout/logo/Claims.png"), linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+[data-focus="on"] {
+    background-image: var(--i), linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
-.small-os[data-focus="on"] {
-    background-image: url("../../_content/OSIC.Shared.Layout/logo/OS.png"), linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-}
-.small-ic[data-focus="on"] {
-    background-image: url("../../_content/OSIC.Shared.Layout/logo/IC.png"), linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-}
-.spaceman, .spaceman1, .spaceman2 {
+.spaceman {
     position: absolute;
     bottom: 0;
     height: 182px;
     width: 295px;
+    background-image: url(../../_content/OSIC.Shared.Layout/infomation/Spaceman.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     right: 0;
     z-index: -1;
 }
-.spaceman {
-    background-image: url(../../_content/OSIC.Shared.Layout/infomation/Spaceman.svg);
-}
-.spaceman1 {
+
+.spaceman[data-type="1"] {
     background-image: url(../../_content/OSIC.Shared.Layout/infomation/Spaceman1.svg);
 }
-.spaceman2 {
+.spaceman[data-type="2"] {
     background-image: url(../../_content/OSIC.Shared.Layout/infomation/Spaceman2.svg);
 }
 .title {
@@ -58,10 +51,11 @@
     color:#fff;
     width:100%;
 }
-.future {
+.slogan {
+    width: 100%;
     font-size: 8.5px;
     color: #fff;
-    text-align:center;
+    text-align: center;
 }
 ::deep .ui-scroll {
     position: absolute;

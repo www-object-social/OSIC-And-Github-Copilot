@@ -1,0 +1,24 @@
+﻿<OSIC.Shared.Layout.frame.Component Name="OSIC.Shared.Layout.agreements.Component">
+    <Content>
+        <object>
+            <OSIC.Shared.Layout.ui.window.A4>
+                <Content>
+                    <OSIC.Shared.Layout.ui.scroll.Component>
+                        <Content>
+                         HALLO WORLD
+
+                        </Content>
+                    </OSIC.Shared.Layout.ui.scroll.Component>
+                </Content>
+            </OSIC.Shared.Layout.ui.window.A4>
+        </object>
+    </Content>
+</OSIC.Shared.Layout.frame.Component>
+@code {
+    protected override Task OnInitializedAsync()
+    {
+        InfomationHandler.Change += async () => await InvokeAsync(StateHasChanged);
+        BindingConfigation.LanguageChange += async () => await InvokeAsync(StateHasChanged);
+        return base.OnInitializedAsync();
+    }
+}

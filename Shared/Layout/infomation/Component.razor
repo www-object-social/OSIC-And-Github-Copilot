@@ -3,24 +3,52 @@
         <object>
          <OSIC.Shared.Layout.ui.window.A4>
              <Content>
-                    <div class="small-claims logo" data-focus=@(InfomationHandler.Software==Project.Software.Claims?"on":"off") @onclick="()=>InfomationHandler.Open(Project.Software.Claims)"></div>
-                    <div class="small-os logo" data-focus=@(InfomationHandler.Software==Project.Software.OBJECTSOCIAL?"on":"off") @onclick="()=>InfomationHandler.Open(Project.Software.OBJECTSOCIAL)"></div>
-                    <div class="small-ic logo" data-focus=@(InfomationHandler.Software==Project.Software.InterConnecting?"on":"off") @onclick="()=>InfomationHandler.Open(Project.Software.InterConnecting)"></div>
+                    <div class="claims logo" style="--i:url('../../_content/OSIC.Shared.Layout/logo/Claims.png')" data-focus=@(InfomationHandler.Software==Project.Software.Claims?"on":"off") @onclick="()=>InfomationHandler.Open(Project.Software.Claims)"></div>
+                    <div class="os logo" style="--i:url('../../_content/OSIC.Shared.Layout/logo/OS.png')" data-focus=@(InfomationHandler.Software==Project.Software.OBJECTSOCIAL?"on":"off") @onclick="()=>InfomationHandler.Open(Project.Software.OBJECTSOCIAL)"></div>
+                    <div class="ic logo" style="--i:url('../../_content/OSIC.Shared.Layout/logo/IC.png')" data-focus=@(InfomationHandler.Software==Project.Software.InterConnecting?"on":"off") @onclick="()=>InfomationHandler.Open(Project.Software.InterConnecting)"></div>
                     <div class="title">@(InfomationHandler.Software switch { Project.Software.InterConnecting => "𝖨𝗇𝗍𝖾𝗋𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗇𝗀", Project.Software.OBJECTSOCIAL => "𝗢𝗕𝗝𝗘𝗖𝗧:𝗦𝗢𝗖𝗜𝗔𝗟", _ => "𝗖𝗹𝗮𝗶𝗺𝘀" })</div>
                     <div>
                         Our SaaS platform connects businesses, individuals, and developers by providing a user-friendly, social environment for creating and sharing software. We welcome talent from all backgrounds to join our community and build together.
                     </div>
                     <OSIC.Shared.Layout.ui.scroll.Component>
                         <Content>
-                            @switch (BindingConfigation.Language)
+                            @switch (InfomationHandler.Software)
                             {
-                                case OSIC.Shared.Project.Language.DA:
-                                    <div class="future">Fremtidens teknologi, fremtidens os</div>
-                                break;
+                                case Project.Software.OBJECTSOCIAL:
+                                    switch (BindingConfigation.Language)
+                                    {
+                                        case OSIC.Shared.Project.Language.DA:
+                                            <div class="slogan">Forbinder sammen.</div>
+                                            break;
+                                        default:
+                                            <div class="slogan">Connecting together.</div>
+                                            break;
+                                    }
+                                    break;
+                                case Project.Software.InterConnecting:
+                                    switch (BindingConfigation.Language)
+                                    {
+                                        case OSIC.Shared.Project.Language.DA:
+                                            <div class="slogan">Fremtidens teknologi, fremtidens os.</div>
+                                            break;
+                                        default:
+                                            <div class="slogan">Future tech, future us.</div>
+                                            break;
+                                    }
+                                    break;
                                 default:
-                                    <div class="future">Future tech, future us.</div>
+                                    switch (BindingConfigation.Language)
+                                    {
+                                        case OSIC.Shared.Project.Language.DA:
+                                            <div class="slogan">Foreningen.</div>
+                                            break;
+                                        default:
+                                            <div class="slogan">Association.</div>
+                                            break;
+                                    }
                                 break;
                             }
+                            
                             <div class="browser">
                                 <img src="/_content/OSIC.Shared.Layout/infomation/Chrome.png" />
                                 <img src="/_content/OSIC.Shared.Layout/infomation/Edge.png" />
@@ -39,10 +67,10 @@
                     @switch (new Random().Next(0,10))
                     {
                         case 1 or 3 or 8:
-                            <div class="spaceman1"></div>
+                            <div class="spaceman" data-type="1"></div>
                             break;
                         case 2 or 5 or 7:
-                            <div class="spaceman2"></div>
+                            <div class="spaceman" data-type="2"></div>
                             break;
                         default:
                             <div class="spaceman"></div>
