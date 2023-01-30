@@ -3,13 +3,12 @@
         <object>
          <OSIC.Shared.Layout.ui.window.A4>
              <Content>
+                    <OSIC.Shared.Layout.ui.window.close.Component Name="OSIC.Shared.Layout.infomation.Component" />
                     <div class="claims logo" style="--i:url('../../_content/OSIC.Shared.Layout/logo/Claims.png')" data-focus=@(InfomationHandler.Software==Project.Software.Claims?"on":"off") @onclick="()=>InfomationHandler.Open(Project.Software.Claims)"></div>
                     <div class="os logo" style="--i:url('../../_content/OSIC.Shared.Layout/logo/OS.png')" data-focus=@(InfomationHandler.Software==Project.Software.OBJECTSOCIAL?"on":"off") @onclick="()=>InfomationHandler.Open(Project.Software.OBJECTSOCIAL)"></div>
                     <div class="ic logo" style="--i:url('../../_content/OSIC.Shared.Layout/logo/IC.png')" data-focus=@(InfomationHandler.Software==Project.Software.InterConnecting?"on":"off") @onclick="()=>InfomationHandler.Open(Project.Software.InterConnecting)"></div>
                     <div class="title">@(InfomationHandler.Software switch { Project.Software.InterConnecting => "𝖨𝗇𝗍𝖾𝗋𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗇𝗀", Project.Software.OBJECTSOCIAL => "𝗢𝗕𝗝𝗘𝗖𝗧:𝗦𝗢𝗖𝗜𝗔𝗟", _ => "𝗖𝗹𝗮𝗶𝗺𝘀" })</div>
-                    <div>
-                        Our SaaS platform connects businesses, individuals, and developers by providing a user-friendly, social environment for creating and sharing software. We welcome talent from all backgrounds to join our community and build together.
-                    </div>
+ 
                     <OSIC.Shared.Layout.ui.scroll.Component>
                         <Content>
                             @switch (InfomationHandler.Software)

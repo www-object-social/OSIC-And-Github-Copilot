@@ -1,6 +1,6 @@
 ﻿object {
     color: #fff;
-    font-size: 7px;
+    font-size: 8px;
     font-family: nunito_sansregular;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -9,7 +9,13 @@
     top: 20%;
     cursor: pointer;
 }
+img {
+    width: 10px;
+    margin: 5px -1px 0 0;
+}
 div {
+    text-shadow: -1px 0px 4px #373434;
     cursor: pointer;
     float: left;
+    font-family: nunito_sansregular;
 }

@@ -11,17 +11,17 @@ namespace OSIC.Server.Hosting.gateway
     {
         public Automatic(IDbContextFactory<Database.Context> DBContextFactory)
         {
-            using var DB = DBContextFactory.CreateDbContext();
-            if (DB.Bindings.Any(x => x.Expires < DateTime.UtcNow))
+            try
             {
-                DB.Bindings.RemoveRange(DB.Bindings.Where(x => x.Expires < DateTime.UtcNow));
-                try
+                using var DB = DBContextFactory.CreateDbContext();
+                if (DB.Bindings.Any(x => x.Expires < DateTime.UtcNow))
                 {
+                    DB.Bindings.RemoveRange(DB.Bindings.Where(x => x.Expires < DateTime.UtcNow));
                     DB.SaveChanges();
                 }
-                catch (Exception)
-                {
-                }
+            }
+            catch (Exception)
+            {
             }
         }
     }

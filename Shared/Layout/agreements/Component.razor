@@ -3,10 +3,150 @@
         <object>
             <OSIC.Shared.Layout.ui.window.A4>
                 <Content>
+                    <OSIC.Shared.Layout.ui.window.close.Component Name="OSIC.Shared.Layout.agreements.Component" />
+                    <div class="standard">
+                        <img src="/_content/OSIC.Shared.Layout/agreements/ccpa.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/ftc.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/gdpr.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/hipaa.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/india-it-act.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/iso.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/lgpd.svg" /><br />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/mas.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/nist.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/nydfs.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/pcidss.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/pdpa.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/pdpo.svg" />
+                        <img src="/_content/OSIC.Shared.Layout/agreements/popia.svg"/>
+                    </div>
+                    @switch (BindingConfigation.Language)
+                    {
+                        case Project.Language.DA:
+                            <div class="title">Juridiske politik og aftaler.</div>
+                            break;
+                        default:
+                            <div class="title">Legal policy and agreement.</div>
+                            break;
+                    }
                     <OSIC.Shared.Layout.ui.scroll.Component>
                         <Content>
-                         HALLO WORLD
+                            @switch (BindingConfigation.Language)
+                            {
+                                case Project.Language.DA:
+                                    <div class="os">
+                                     At OBJECT:SOCIAL, also known as OS, we're all about pushing the boundaries of what is technologically possible. Based in Denmark, Hornevej 7, 2770 Kastrup, we specialize in developing innovative software that seamlessly integrates with the work of developers and users. Our mission is to make Software as a Service accessible to everyone by building a new network for connections and user participation. With our Danish VAT number DK38331175 we're fully compliant with a wide range of regulations including GDPR, EU & UK GDPR, PDPA, PDPO, POPIA, India IT Act, LGPD, HIPAA, HITECH, FTCA, GLBA, FCRA, FACTA, NIST SP 800, FISMA, CMMC, NYDFS, New York SHIELD, CCPA, CPRA, ISO 27001, ISO 27002, MAS, and PCI DSS.
+                                        <br><br>
+                                        Our document "Legal Policy and Agreements" is always up to date and easily accessible, with quick access on the right side of our application or website "OBJECT:SOCIAL" and a copyright symbol and the text "OBJECT:SOCIAL © (current year) Legal Policy and Agreements" is a button that our users can click to access this document. And when we say "us", "we" or "our", we're referring to the great team here at OBJECT:SOCIAL.
+                                        <br/><br/>
+                                        When we say "you" or "your", we're referring to you as the person who has read this document or has permission from a parent or guardian to accept this document.
+                                        <br><br/>
+                                        If we update this document, it's important that you review and approve the changes again in order to continue to use our Platform. Failure to do so may result in revocation of your access to the Platform. Please note that it's your responsibility to review and accept these updates and that you assume all risks associated with not doing so.
+                                    </div>
+                                    <ul class="index">
+                                        <li>1. Application or browser identification.</li>
+                                        <li>
+                                            <ul>
+                                                <li>1.1 Session.</li>
+                                                <li>1.2 CacheDirectory.</li>
+                                                <li>1.3 Cookie.</li>
+                                                <li>1.4 AppDataDirectory.</li>
+                                            </ul>
+                                        </li>
+                                        <li>2. Software as a Service (SaaS).</li>
+                                        <li>
+                                            <ul>
+                                                <li>2.1 Languages.</li>
+                                                <li>2.2 Regions.</li>
+                                                <li>
+                                                    <ul>
+                                                        <li>
+                                                            2.2.1 GDPR+CCPA Age (16+) settement for our platform.
+                                                        </li>
+                                                        <li>
+                                                            2.2.3 PDPO+POPIA+India IT Act Age (18+) settement for our platform.
+                                                        </li>
+                                                        <li>
+                                                            2.2.3 Other country(13+) settement for our platform.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>3. Members</li>
+                                        <li>
+                                            <ul>
 
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <h1>1. Application or browser identification .</h1>
+                                    <article>
+                                        Application or browser identification is used to keep your data secure and accessible only to our servers. We use encryption and adhere to regulations such as GDPR, EU & UK GDPR, PDPA, PDPO, POPIA, India IT Act, LGPD, HIPAA, HITECH, FTCA, GLBA, FCRA, FACTA, NIST SP 800, FISMA, CMMC, NYDFS, New York SHIELD, CCPA, CPRA, ISO 27001, ISO 27002, MAS and PCI DSS to protect your data.
+                                    </article>
+                                    <h1>1.1 Session.</h1>
+                                    <article>
+                                        A unique identifier assigned to your browser or device when you first visit our website or launch our application. This allows us to remember your preferences and activities as you navigate our website or use our application. The session ID is stored in accordance with the GDPR and other regulations and can be deleted upon request or after the session expires.
+                                    </article>
+                                    <h1>1.2 CacheDirectory.</h1>
+                                    <article>
+                                   This is a folder on your cell phone or computer where we temporarily store information about your activities and preferences in our application to provide you with a personalized experience. This information is stored in accordance with the GDPR and other regulations and can be deleted upon request. However, it is also automatically deleted when the app is closed or the device is restarted.
+                                   </article>
+                                    <h1>1.3 Cookie.</h1>
+                                    <article>
+                                        A small file we create on your device when you log into our website. This cookie allows us to remember your preferences and activity as you navigate our site. In accordance with GDPR and other regulations, we only store cookies for a maximum of 60 days and each visit adds an additional 60 days.
+                                    </article>
+                                    <h1>1.4 AppDataDirectory.</h1>
+                                    <article>
+                                        An area on your device where we store a unique session ID and associated data when you log in to our application. This allows us to track your activities and preferences when using the Application. This information is stored in accordance with the GDPR and other regulations and can be deleted upon request.
+                                    </article>
+                                    <h1>2. Software as a Service (SaaS)</h1>
+                                    <article>
+                                        We provide the software over the Internet as a service, rather than installing it on the user's device or on an internal server. This allows users to access the software and its features through a web browser or mobile app, typically with a subscription-based pricing model. The software is hosted and maintained by us and can be accessed via the Internet. This is commonly known as web-based software, on-demand software, and hosted software.
+                                        <br><br>
+                                       We are constantly developing new capabilities and have created a system that is divided into different websites and applications. Our development platform, InterConnecting, can be accessed under the domain name interconnecting.info and the app InterConnecting. We welcome anyone who would like to contribute, whether it's correcting spelling errors, adding a new language, or contributing new ideas.
+                                       <br><br>
+                                        OBJECT:SOCIAL is our business platform where we develop tools for companies and which can be accessed via the domain object.social and the app OBJECT:SOCIAL.
+                                        <br><br>
+                                     Claims is our social system for individuals and can be accessed through the domain names run.claims, memory.claims, memories.claims, bad.claims, between.claims, and good.claims, as well as the app called Claims.
+                                    </article>
+                                     <h1>2.1 Languages</h1>
+                                     <article>
+                                        Our platform currently supports English and Danish as languages. However, please note that spelling or translation errors may occur.
+                                     </article>
+                                    <h1>2.2 Regions</h1>
+                                    <article>
+                                        Our platform is designed to be accessible to users in multiple regions and we are continuously expanding to new regions in the future. We ensure compliance with all local regulations in every region in which we operate, including GDPR, EU & UK GDPR, PDPA, PDPO, POPIA, India IT Act, LGPD, HIPAA, HITECH, FTCA, GLBA, FCRA, FACTA, NIST SP 800, FISMA, CMMC, NYDFS, New York SHIELD, CCPA, CPRA, ISO 27001, ISO 27002, MAS and PCI DSS. We have implemented strict guidelines to protect the personal information of our users, including a requirement for parental approval for individuals under a certain age to create an account on our platform. Our goal is to make our software accessible to as many users as possible while maintaining the security of their data and adhering to all local regulations.
+                                    </article>
+                                    <h1>2.2.1 GDPR+CCPA Age (16+) settement for our platform.</h1>
+                                    <article>
+                                        Belgium,California, Croatia, Denmark, Finland, France, Ireland, Luxembourg, Norway, Sweden, and the United Kingdom  is 16 years or older to create an account with us
+                                    </article>
+                                    <h1>2.2.2 PDPO+POPIA+India IT Act+LGPD Age (18+) settement for our platform.</h1>
+                                    <article>
+                                        Hong Kong,South Africa,India,Brazil is 18 years or older to create an account with us
+                                    </article>
+                                    <h1>2.2.3 Other country(13+) settement for our platform.</h1>
+                                    <article>
+                                        Country not listed in 2.2.1 and 2.2.2 is 13 years or older to create an account with us.
+                                    </article>
+                                    <h1>3. Members</h1>
+                                    <article>
+                                    </article>
+                                    <h1>3.1. Parent.</h1>
+                                    break;
+                                default:
+                                    <div class="os">
+                                        At OBJECT:SOCIAL ApS, also known as "OS," we're all about pushing the boundaries of what's possible with technology. Located in Denmark at Hornevej 7, 2770 Kastrup, we specialize in creating cutting-edge software that seamlessly integrates with both developers and individual users. Our mission is to make Software as a Service accessible to everyone by building a new network for connections and user engagement. With our Danish VAT number of DK38331175, we're fully compliant with a wide range of regulations, including GDPR, EU & UK GDPR, PDPA, PDPO, POPIA, India IT Act, LGPD, HIPAA, HITECH, FTCA, GLBA, FCRA, FACTA, NIST SP 800, FISMA, CMMC, NYDFS, New York SHIELD, CCPA, CPRA, ISO 27001, ISO 27002, MAS, and PCI DSS.
+                                        <br><br>
+                                        Our "legal policy and agreements" document is always up-to-date and readily accessible, with quick access on the right side of our application or website "OBJECT:SOCIAL" as well as a copyright symbol and the text "OBJECT:SOCIAL © (current year) legal policy and agreements" is a button that our user can click to gain access to this document. And when we say "us," "we," or "our," we're referring to the amazing team here at OBJECT:SOCIAL ApS.
+                                    </div>
+                                    <ul class="index">
+                                        <li><a href="#1">1. Application or browser identification.</a></li>
+                                     </ul>
+                                    break;
+                            }
+                            
                         </Content>
                     </OSIC.Shared.Layout.ui.scroll.Component>
                 </Content>

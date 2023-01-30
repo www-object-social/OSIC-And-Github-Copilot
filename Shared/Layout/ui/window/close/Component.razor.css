@@ -1,0 +1,14 @@
+﻿div {
+    background: url("ui/window/Close.png");
+    background-size: contain;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    opacity: .4;
+    cursor: pointer;
+}
+    div:hover {
+        opacity: .8;
+    }

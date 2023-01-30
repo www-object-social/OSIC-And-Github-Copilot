@@ -1,0 +1,6 @@
+﻿<div @onclick="Click"></div>
+@code {
+    [Parameter, EditorRequired]
+    public string Name { get; set; } = null!;
+    private void Click() => FrameHandler.Close(Name);
+}

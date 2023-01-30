@@ -37,6 +37,7 @@ class Handler
         var s = this.Settings.Single(x => x.Name == Name);
         s.IsOpen = false;
         this.Update();
+        s.Update();
         return Task.CompletedTask;
     }
 }

@@ -1,0 +1,65 @@
+﻿.standard {
+    margin: 10px 0 0 0;
+    text-align: center;
+    position:absolute;
+    top:40px;
+    width:100%;
+}
+    .standard img {
+        width: 40px;
+        margin: 4px;
+    }
+.title {
+    font-family: nunito_sansextrabold;
+    font-size:12px;
+    text-align:center;
+    top:20px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+}
+::deep .ui-scroll {
+    position: absolute;
+    color: #fff;
+    left: 1px;
+    width: calc(100% - 2px);
+    top:155px;
+    height: calc(100% - 155px);
+}
+.os {
+    font-size: 8px;
+    color: #fff;
+    padding: 10px;
+    font-family: nunito_sansregular;
+    text-shadow: -1px 0px 4px #373434;
+}
+.index{
+    margin:20px;
+}
+ul {
+    font-size: 8px;
+
+    list-style: none;
+}
+li {
+    margin:5px;
+}
+a, a:active, a:focus {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+article {
+    font-size: 9px;
+    color: #fff;
+    padding: 15px 0 0 15px;
+    font-family: nunito_sansregular;
+    text-shadow: -1px 0px 4px #373434;
+}
+h1 {
+    text-shadow: -1px 0px 4px #373434;
+    font-size: 10px;
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+    font-family: nunito_sansregular;
+}

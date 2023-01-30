@@ -1,12 +1,21 @@
 ﻿<object @onclick=Open>
     <div>𝗢𝗕𝗝𝗘𝗖𝗧:𝗦𝗢𝗖𝗜𝗔𝗟&nbsp;©&nbsp;@DateTime.Now.Year&nbsp;&nbsp;</div>
+    <img src="/_content/OSIC.Shared.Layout/agreements/setting.svg" />
     @switch (BindingConfigation.Language)
     {
+        case Project.Language.DA:
+            <div>juridiske politik og aftaler.</div>
+            break;
         default:
-            <div>Agreements</div>
+            <div>Legal policy and agreement.</div>
             break;
     }
 </object>
 @code{
     public void Open() => FrameHandler.Open("OSIC.Shared.Layout.agreements.Component");
+    protected override Task OnInitializedAsync()
+    {
+        BindingConfigation.LanguageChange += async () => await InvokeAsync(StateHasChanged);
+        return base.OnInitializedAsync();
+    }
 }
